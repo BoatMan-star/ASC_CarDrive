@@ -27,8 +27,7 @@ uint8_t Route_Flag;  //小车路线判断
 int16_t Speed1;
 int16_t Speed2;
 
-//PID控制启动标志变量
-uint8_t PIDControl;
+
 
 
 //电机目标速度
@@ -88,23 +87,23 @@ void TIM2_IRQHandler(void)
     {
 		if (Route_Flag==Stringht)
 		{
-			if (PIDControl>=1) PID_Straight();
+			PID_Straight();
 		}
 		else if (Route_Flag==LightLeft)
 		{
-			if (PIDControl>=1) PID_LeftSlight();
+			PID_LeftSlight();
 		}
 		else if (Route_Flag==LightRight)
 		{
-			if (PIDControl>=1) PID_RightSlight();
+			PID_RightSlight();
 		}
 		else if (Route_Flag==StrLeft)
 		{
-			if (PIDControl>=1) PID_LeftStraight();
+			PID_LeftStraight();
 		}
 		else if (Route_Flag==StrRight)
 		{
-			if (PIDControl>=1) PID_RightStraight();
+			PID_RightStraight();
 		}
 	  }
 	
