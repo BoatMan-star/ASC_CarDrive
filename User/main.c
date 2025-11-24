@@ -89,7 +89,7 @@ void TIM2_IRQHandler(void)
 		{
 			PID_Straight();
 		}
-		else if (Route_Flag==LightLeft)
+		else if (Route_Flag==LightLeft)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 		{
 			PID_LeftSlight();
 		}
@@ -106,6 +106,11 @@ void TIM2_IRQHandler(void)
 			PID_RightStraight();
 		}
 	  }
+		
+		if (Key_Num==1)     //按下按键小车静止
+		{
+			PID_Still();
+		}
 	
 		}
 		TIM_ClearITPendingBit(TIM2, TIM_IT_Update);

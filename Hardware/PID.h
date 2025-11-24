@@ -6,5 +6,6 @@ void PID_RightSlight(void);
 void PID_LeftSlight(void);
 void PID_RightStraight(void);
 void PID_LeftStraight(void);
+void PID_Still(void);
 
 #endif

@@ -37,7 +37,7 @@ uint8_t Route_Judge(void)
 		//直角左拐
 		if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_0) == 0&&GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) == 1)
 		{
-			Route_Flag=4;
+			Route_Flag=4;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 		}
 		//直角右拐
 		else if (GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_0) == 1&&GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_1) == 0)
@@ -52,13 +52,13 @@ uint8_t Route_Judge(void)
 		//轻微左拐
 		else if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_4) == 0)
 		{
-			Route_Flag=2;
+			Route_Flag=2;                                                                                                                                                                                                
 		}
 		//轻微右拐
 		else if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_5) == 0)
 		{
 			Route_Flag=3;
-		}
+		}                                                                                                                                                                                                                                                                                                                                                                                                       
 	}
 	
 	return Route_Flag;
