@@ -1,0 +1,40 @@
+1.sensor pin reference
+x1->a4
+x2->b0
+x3->a5
+x4->b1
+
+2.motor pin reference
+left motor
+m1->ao1
+m2->ao2
+A->a6
+B->a7
+
+right motor
+m1->bo1
+m2->bo2
+A->b7
+B->b6
+
+3tb6112 motor drive pin reference
+pwma->a2
+pwmb->a3
+ain1->b13
+ain2->b12
+bin1->b15
+bin2->b14
+
+OLED pin reference
+scl->b8
+sda->b9
+
+key pin reference
+key1->a0
+key2->a1s
+
+
+
+
+
+
